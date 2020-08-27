@@ -6,7 +6,7 @@ from annotate_question import annotate_question
 from evaluate_question import main
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-config_path', default = "config/model_config.json",
+parser.add_argument('-c','-config_path', default = "config/model_config.json",
 	help='Path to the config file.')
 parser.add_argument('-q','--question', required = True,
 	help='Natural language question for the database.')
