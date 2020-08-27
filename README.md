@@ -1,6 +1,6 @@
 # Voice2sql
 
-A project of getting SQL query from a speech in natural language. A goal will be achieved by implementing
+A project for getting SQL query from a speech in natural language. A goal will be achieved by implementing
 * Noise-robust Automatic Speech Recognition(ASR) engine.
 * Natual language to SQL engine.
 * Table-aware name correction.
@@ -48,6 +48,11 @@ wget https://github.com/mozilla/DeepSpeech/releases/download/v0.7.4/deepspeech-0
 
 A noise-robust Automatic Speech Recognition engine implementing the denoising function from [Membrane Project](https://github.com/lee-junseok/Membrane) and [DeepSpeech](https://github.com/mozilla/DeepSpeech) speech recognition model.
 
+- TensorFlow
+- PyAudio
+- Librosa
+
+
 An example of asking ***"What was the result of the game with New York Jets?"***:
 
 ![ASR Screen Shot](static/ASR_screen_shot.png)
@@ -61,9 +66,16 @@ An example of asking ***"What was the result of the game with New York Jets?"***
 - https://github.com/prezaei85/nl2sql
 - https://github.com/salesforce/WikiSQL
 
-***must need GPU***
+(*must have GPU*)
 
 A natuural language to SQL model trained on the [WikiSQL](https://github.com/salesforce/WikiSQL) table data.
+- PyTorch
+- RNN
+- LSTM
+- Attention
+- [spaCy](https://spacy.io/)
+- [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/)
+
 
 An example of the query ***"what was the result of the game with new york that"*** from above which is what the model transcribed from the speech asking ***"What was the result of the game with New York Jets?"***:
 
@@ -107,7 +119,8 @@ df
 ```
 ![WikiSQL table](static/WikiSQL_table.png)
 ------------------------------
-
+## Todo
+Update dependencies to the latest versions.
 
 ## Contact
 For questions or comments, feel free to reach out to lee.junseok39@gmail.com. Thank you!
