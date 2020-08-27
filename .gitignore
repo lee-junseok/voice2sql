@@ -1,7 +1,15 @@
 ##Data Files
+**/deepspeech_data/deepspeech**
+**/pretrained/
+**pretrained**
 
-**/deepspeech_data/
+## No jupyter notebook
+**.ipynb
 
-##not yet to push
+## No flask app files
+**flask**
+
+## local files
+**/hello**
 **/utils.py
-**/voice2sql.py
+**/requirements2.txt

@@ -1,0 +1,8 @@
+{
+    "table_id" : "2-13258745-2",
+    "data_path": "pretrained/wikisql/",
+    "anno_path": "pretrained/wikisql/data/",
+    "dir_in" : "pretrained/wikisql/data/",
+    "dir_out" : "out/",
+    "model" : "pretrained/wikisql/pretrain.pt"
+}
